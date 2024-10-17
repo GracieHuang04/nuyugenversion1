@@ -1,0 +1,184 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "accent-2"
+      }
+    },
+    "6bfa999e-8163-4cd3-b6e8-8e35e8ed483b": {
+      "type": "image-banner",
+      "blocks": {
+        "template--19114619142420__6bfa999e-8163-4cd3-b6e8-8e35e8ed483b-1688847919e263f494-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--19114619142420__6bfa999e-8163-4cd3-b6e8-8e35e8ed483b-1688847919e263f494-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--19114619142420__6bfa999e-8163-4cd3-b6e8-8e35e8ed483b-1688847919e263f494-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19114619142420__6bfa999e-8163-4cd3-b6e8-8e35e8ed483b-1688847919e263f494-0",
+        "template--19114619142420__6bfa999e-8163-4cd3-b6e8-8e35e8ed483b-1688847919e263f494-1",
+        "template--19114619142420__6bfa999e-8163-4cd3-b6e8-8e35e8ed483b-1688847919e263f494-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/STRESS_RELIEF.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "7cfd0966-3c1b-4394-a55a-c3c3ee71de5c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19114619142420__7cfd0966-3c1b-4394-a55a-c3c3ee71de5c-16888481676f73f276-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stress Relief",
+            "heading_size": "h2"
+          }
+        },
+        "template--19114619142420__7cfd0966-3c1b-4394-a55a-c3c3ee71de5c-16888481676f73f276-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "template--19114619142420__7cfd0966-3c1b-4394-a55a-c3c3ee71de5c-16888481676f73f276-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19114619142420__7cfd0966-3c1b-4394-a55a-c3c3ee71de5c-16888481676f73f276-0",
+        "template--19114619142420__7cfd0966-3c1b-4394-a55a-c3c3ee71de5c-16888481676f73f276-1",
+        "template--19114619142420__7cfd0966-3c1b-4394-a55a-c3c3ee71de5c-16888481676f73f276-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "157269a6-9962-43f5-b510-7f6dea6b2e58": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18632139800852__157269a6-9962-43f5-b510-7f6dea6b2e58-168211267202d12512-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "The world's most researched stress relief formula",
+            "heading_size": "h1"
+          }
+        },
+        "template--18632139800852__157269a6-9962-43f5-b510-7f6dea6b2e58-168211267202d12512-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Soulera's adaptogenic herbs restore your ability to cope with stress by modulating cortisol levels, returning you to the healthy middle ground between stimulation and exhaustion. Stress has a role in every human disease. The mitigation of the effects of stress is of vital importance in preserving human wellness.</p>"
+          }
+        },
+        "template--18632139800852__157269a6-9962-43f5-b510-7f6dea6b2e58-168211267202d12512-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18632139800852__157269a6-9962-43f5-b510-7f6dea6b2e58-168211267202d12512-0",
+        "template--18632139800852__157269a6-9962-43f5-b510-7f6dea6b2e58-168211267202d12512-1",
+        "template--18632139800852__157269a6-9962-43f5-b510-7f6dea6b2e58-168211267202d12512-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 20,
+        "columns_desktop": 4,
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "6bfa999e-8163-4cd3-b6e8-8e35e8ed483b",
+    "7cfd0966-3c1b-4394-a55a-c3c3ee71de5c",
+    "157269a6-9962-43f5-b510-7f6dea6b2e58",
+    "main-collection-product-grid"
+  ]
+}

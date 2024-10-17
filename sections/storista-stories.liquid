@@ -1,0 +1,157 @@
+{% stylesheet %}
+  .storista-header {
+    display: flex;
+    width: 100%;
+  }
+
+  .storista-header-left {
+    justify-content: start;
+  }
+
+  .storista-header-center {
+    justify-content: center;
+  }
+
+  .storista-header-right {
+    justify-content: end;
+  }
+{% endstylesheet %}
+{% if section.settings.heading != "" %}
+<div class="storista-header storista-header-{{ section.settings.heading_position }}">
+    <h2 class="{{ section.settings.heading_css }}">{{ section.settings.heading }}</h2>
+</div>
+{% endif %}
+{%  if section.settings.id != "" %}
+<script type="text/javascript">
+    {% assign widget_id = "storista_widget_" | append: section.settings.stories_widget_id %}
+    window["{{ widget_id }}"] = {
+      strings: {
+        add_to_cart: "{{ 'sections.storista-stories.add_to_cart' | t }}",
+        sold_out: "{{ 'sections.storista-stories.sold_out' | t }}",
+        item_added: "{{ 'sections.storista-stories.item_added' | t }}"
+      },
+      products: {{ shop.metaobjects['app--4754013--storista_products'][widget_id].products.value | json }},
+      price_template: "{{ shop.money_format }}",
+      product_options: {
+      {% for product in shop.metaobjects['app--4754013--storista_products'][widget_id].products.value %}
+        "{{ product.id }}": {
+          options_with_values: {{ product.options_with_values | json }},
+          selected_or_first_available_variant: {{ product.selected_or_first_available_variant | json }},
+          has_only_default_variant: {{ product.has_only_default_variant | json }}
+        }{% unless forloop.last %},{% endunless -%}
+      {% endfor %}
+      }
+    }
+  </script>
+{% endif %}
+<div class="storista-wg storista-utils-center storista-section-{{ section.id }}" data-storista data-section-id="{{ section.id }}" data-storista-visible="{{ section.settings.stories_visible }}" data-storista-widget-id="{{ section.settings.stories_widget_id }}"></div>
+{% if request.design_mode == false %}
+<script type="text/javascript">
+    (function (w,d,s,o,f,js,fjs) {w['storista-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };if (d.getElementById(o)) {return;}js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);}(window, document, 'script', '_sw', 'https://cdn.storista.io/widget.js'));_sw('init', { widget_id: '{{ section.settings.stories_widget_id }}', attachTo: 'storista-section-{{ section.id }}', overrides: {{ section.settings | json }}});
+</script>
+{% endif %}
+
+{% comment %}
+PLEASE DON'T TOUCH ANYTHING BELOW THIS LINE
+{% endcomment %}
+{% if request.design_mode %}
+<script type="text/javascript">
+if (Shopify.designMode) {
+    document.addEventListener('shopify:section:load', function(event) {
+        var c = document.querySelector('div[data-section-id="' + event.detail.sectionId + '"]');
+        if (c && c.dataset.storistaVisible === 'true') {
+            window['storista-handler']('init', { widget_id: c.dataset.storistaWidgetId, attachTo: 'storista-section-' + event.detail.sectionId});
+        }
+    });
+    var c = document.querySelector('div[data-storista]');
+    if (c) {
+        (function (w,d,s,o,f,js,fjs) {w['storista-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };if(d.getElementById(o)){return;}js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);}(window, document, 'script', '_sw', 'https://cdn.storista.io/widget.js'));
+        _sw('init', { widget_id: c.dataset.storistaWidgetId, attachTo: 'storista-section-{{ section.id }}', overrides: {{ section.settings | json }}});
+    }
+}
+</script>
+{% endif %}
+
+{% schema %}
+{
+    "name": {
+        "en": "Storista Stories"
+    },
+    "settings": [
+        {
+            "type": "checkbox",
+            "label": {
+                "en": "Visible"
+            },
+            "default": true,
+            "id": "stories_visible"
+        },
+        {
+            "type": "text",
+            "label": {
+                "en": "Widget ID"
+            },
+            "id": "stories_widget_id"
+        },
+		{
+            "type": "checkbox",
+            "label": {
+                "en": "Mute audio"
+            },
+            "default": true,
+            "id": "muted"
+        },
+        {
+            "type": "header",
+            "content": "Section Header"
+        },
+        {
+            "type": "text",
+            "label": {
+                "en": "Heading"
+            },
+            "id": "heading"
+        },
+        {
+            "type": "select",
+            "id": "heading_position",
+            "label": "Alignment",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "center"
+        },
+        {
+            "type": "paragraph",
+            "content": "If you have different style for section headings, please write CSS class names here"
+        },
+        {
+            "type": "text",
+            "label": {
+                "en": "Custom CSS class"
+            },
+            "id": "heading_css"
+        }
+    ],
+    "locales": {"tr": {"add_to_cart": "Sepete ekle", "item_added": "\u00dcr\u00fcn sepetinize eklendi", "sold_out": "T\u00fckendi", "view_cart": "Sepeti g\u00f6r\u00fcnt\u00fcle"}, "hu": {"add_to_cart": "Hozz\u00e1ad\u00e1s a kos\u00e1rhoz", "item_added": "Betett\u00fck a term\u00e9ket a kos\u00e1rba", "sold_out": "Elfogyott", "view_cart": "Kos\u00e1r megtekint\u00e9se"}, "nl": {"add_to_cart": "Aan winkelwagen toevoegen", "item_added": "Artikel toegevoegd aan winkelwagen", "sold_out": "Uitverkocht", "view_cart": "Winkelwagen bekijken"}, "en": {"add_to_cart": "Add to cart", "item_added": "Item added to your cart", "sold_out": "Sold out", "view_cart": "View cart"}, "ja": {"add_to_cart": "\u30ab\u30fc\u30c8\u306b\u8ffd\u52a0\u3059\u308b", "item_added": "\u30ab\u30fc\u30c8\u306b\u30a2\u30a4\u30c6\u30e0\u304c\u8ffd\u52a0\u3055\u308c\u307e\u3057\u305f", "sold_out": "\u58f2\u308a\u5207\u308c", "view_cart": "\u30ab\u30fc\u30c8\u3092\u898b\u308b"}, "de": {"add_to_cart": "In den Warenkorb legen", "item_added": "Artikel wurde in den Warenkorb gelegt", "sold_out": "Ausverkauft", "view_cart": "Warenkorb ansehen"}, "ru": {"add_to_cart": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443", "item_added": "\u0422\u043e\u0432\u0430\u0440 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443.", "sold_out": "\u041f\u0440\u043e\u0434\u0430\u043d\u043e", "view_cart": "\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u043a\u043e\u0440\u0437\u0438\u043d\u0443"}, "pl": {"add_to_cart": "Dodaj do koszyka", "item_added": "Pozycj\u0119 dodano do koszyka", "sold_out": "Wyprzedane", "view_cart": "Poka\u017c koszyk"}, "fi": {"add_to_cart": "Lis\u00e4\u00e4 ostoskoriin", "item_added": "Tuote lis\u00e4tty ostoskoriisi", "sold_out": "Loppuunmyyty", "view_cart": "Katso ostoskori"}, "bg-BG": {"add_to_cart": "\u0414\u043e\u0431\u0430\u0432\u044f\u043d\u0435 \u043a\u044a\u043c \u043a\u043e\u043b\u0438\u0447\u043a\u0430\u0442\u0430", "item_added": "\u0410\u0440\u0442\u0438\u043a\u0443\u043b\u044a\u0442 \u0435 \u0434\u043e\u0431\u0430\u0432\u0435\u043d \u0432 \u043a\u043e\u043b\u0438\u0447\u043a\u0430\u0442\u0430", "sold_out": "\u0418\u0437\u0447\u0435\u0440\u043f\u0430\u043d\u043e", "view_cart": "\u041f\u043e\u043a\u0430\u0436\u0438 \u043a\u043e\u043b\u0438\u0447\u043a\u0430\u0442\u0430"}, "zh-CN": {"add_to_cart": "\u6dfb\u52a0\u5230\u8d2d\u7269\u8f66", "item_added": "\u5546\u54c1\u5df2\u52a0\u5165\u8d2d\u7269\u8f66", "sold_out": "\u552e\u7f44", "view_cart": "\u67e5\u770b\u8d2d\u7269\u8f66"}, "pt-PT": {"add_to_cart": "Adicionar ao carrinho", "item_added": "Item adicionado ao seu carrinho", "sold_out": "Esgotado", "view_cart": "Ver carrinho"}, "it": {"add_to_cart": "Aggiungi al carrello", "item_added": "Articolo aggiunto al carrello", "sold_out": "Esaurito", "view_cart": "Visualizza carrello"}, "ro-RO": {"add_to_cart": "Ad\u0103uga\u021bi \u00een co\u0219", "item_added": "Articolul a fost ad\u0103ugat \u00een co\u0219", "sold_out": "Stoc epuizat", "view_cart": "Vezi co\u0219ul"}, "sk-SK": {"add_to_cart": "Prida\u0165 do ko\u0161\u00edka", "item_added": "Polo\u017eka sa pridala do v\u00e1\u0161ho ko\u0161\u00edka", "sold_out": "Vypredan\u00e9", "view_cart": "Zobrazi\u0165 ko\u0161\u00edk"}, "et": {"add_to_cart": "Lisa ostukorvi", "item_added": "Kaup lisatud teie ostukorvi", "sold_out": "V\u00e4lja m\u00fc\u00fcdud", "view_cart": "Ver carrito"}, "lt-LT": {"add_to_cart": "\u012ed\u0117ti \u012f krep\u0161el\u012f", "item_added": "Prek\u0117 \u012fd\u0117ta \u012f j\u016bs\u0173 krep\u0161el\u012f", "sold_out": "I\u0161parduota", "view_cart": "Per\u017ei\u016br\u0117ti krep\u0161el\u012f"}, "hr-HR": {"add_to_cart": "Dodaj u ko\u0161aricu", "item_added": "Artikl je dodan u va\u0161u ko\u0161aricu", "sold_out": "Rasprodano", "view_cart": "Prika\u017ei ko\u0161aricu"}, "fr": {"add_to_cart": "Ajouter au panier", "item_added": "Article ajout\u00e9 au panier", "sold_out": "\u00c9puis\u00e9", "view_cart": "Voir le panier"}, "el": {"add_to_cart": "\u03a0\u03c1\u03bf\u03c3\u03b8\u03ae\u03ba\u03b7 \u03c3\u03c4\u03bf \u03ba\u03b1\u03bb\u03ac\u03b8\u03b9", "item_added": "\u03a4\u03bf \u03c3\u03c4\u03bf\u03b9\u03c7\u03b5\u03af\u03bf \u03c0\u03c1\u03bf\u03c3\u03c4\u03ad\u03b8\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03ba\u03b1\u03bb\u03ac\u03b8\u03b9 \u03c3\u03b1\u03c2", "sold_out": "\u0395\u03be\u03b1\u03bd\u03c4\u03bb\u03ae\u03b8\u03b7\u03ba\u03b5", "view_cart": "\u03a0\u03c1\u03bf\u03b2\u03bf\u03bb\u03ae \u03ba\u03b1\u03bb\u03b1\u03b8\u03b9\u03bf\u03cd"}, "pt-BR": {"add_to_cart": "Adicionar ao carrinho", "item_added": "Item adicionado ao carrinho", "sold_out": "Esgotado", "view_cart": "Ver carrinho"}, "ko": {"add_to_cart": "\uce74\ud2b8\uc5d0 \ucd94\uac00", "item_added": "\uce74\ud2b8\uc5d0 \ucd94\uac00\ub41c \ud488\ubaa9", "sold_out": "\ud488\uc808", "view_cart": "\uce74\ud2b8 \ubcf4\uae30"}, "zh-TW": {"add_to_cart": "\u52a0\u5165\u8cfc\u7269\u8eca", "item_added": "\u5546\u54c1\u5df2\u52a0\u5165\u8cfc\u7269\u8eca", "sold_out": "\u552e\u7f44", "view_cart": "\u6aa2\u8996\u8cfc\u7269\u8eca"}, "vi": {"add_to_cart": "Th\u00eam v\u00e0o gi\u1ecf h\u00e0ng", "item_added": "M\u1eb7t h\u00e0ng \u0111\u00e3 th\u00eam v\u00e0o gi\u1ecf h\u00e0ng", "sold_out": "\u0110\u00e3 b\u00e1n h\u1ebft", "view_cart": "Xem gi\u1ecf h\u00e0ng"}, "cs": {"add_to_cart": "P\u0159idat do ko\u0161\u00edku", "item_added": "Polo\u017eka byla p\u0159id\u00e1na do ko\u0161\u00edku", "sold_out": "Vyprod\u00e1no", "view_cart": "Zobrazit ko\u0161\u00edk"}, "sl-SI": {"add_to_cart": "Dodaj v ko\u0161arico", "item_added": "Artikel je dodan v ko\u0161arico", "sold_out": "Razprodano", "view_cart": "Prika\u017ei ko\u0161arico"}, "id": {"add_to_cart": "Tambahkan ke keranjang", "item_added": "Item ditambahkan ke keranjang Anda", "sold_out": "Habis", "view_cart": "Lihat keranjang"}, "da": {"add_to_cart": "L\u00e6g i indk\u00f8bskurv", "item_added": "Varen er lagt i indk\u00f8bskurven", "sold_out": "Udsolgt", "view_cart": "Se indk\u00f8bskurv"}, "th": {"add_to_cart": "\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e25\u0e07\u0e43\u0e19\u0e15\u0e30\u0e01\u0e23\u0e49\u0e32\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32", "item_added": "\u0e23\u0e32\u0e22\u0e01\u0e32\u0e23\u0e17\u0e35\u0e48\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e43\u0e19\u0e15\u0e30\u0e01\u0e23\u0e49\u0e32\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32\u0e02\u0e2d\u0e07\u0e04\u0e38\u0e13", "sold_out": "\u0e02\u0e32\u0e22\u0e2b\u0e21\u0e14\u0e41\u0e25\u0e49\u0e27", "view_cart": "\u0e14\u0e39\u0e15\u0e30\u0e01\u0e23\u0e49\u0e32\u0e2a\u0e34\u0e19\u0e04\u0e49\u0e32"}, "sv": {"add_to_cart": "L\u00e4gg i varukorgen", "item_added": "Artikeln har lagts till i varukorgen", "sold_out": "Sluts\u00e5ld", "view_cart": "Visa varukorg"}, "es": {"add_to_cart": "Agregar al carrito", "item_added": "Art\u00edculo agregado a tu carrito", "sold_out": "Agotado", "view_cart": "Ver carrito"}, "nb": {"add_to_cart": "Legg i handlekurv", "item_added": "Vare lagt i handlekurven", "sold_out": "Utsolgt", "view_cart": "Vis handlekurv"}},
+    "presets": [{
+    "name": {
+        "en": "Storista Stories"
+    },
+    "category": {
+        "en": "Image"
+    }
+  }]
+}
+{% endschema %}

@@ -1,0 +1,533 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "b304f55c-8c63-44cb-9c97-9fc77ec26e16": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18632139866388__b304f55c-8c63-44cb-9c97-9fc77ec26e16-1681858171deb5ccbe-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Potent. Proven. Pure.",
+            "heading_size": "h0"
+          }
+        },
+        "template--18632139866388__b304f55c-8c63-44cb-9c97-9fc77ec26e16-1681858171deb5ccbe-1": {
+          "type": "text",
+          "settings": {
+            "text": "Formulas that fight for your well-being.",
+            "text_style": "body"
+          }
+        },
+        "template--18632139866388__b304f55c-8c63-44cb-9c97-9fc77ec26e16-1681858171deb5ccbe-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now!",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18632139866388__b304f55c-8c63-44cb-9c97-9fc77ec26e16-1681858171deb5ccbe-0",
+        "template--18632139866388__b304f55c-8c63-44cb-9c97-9fc77ec26e16-1681858171deb5ccbe-1",
+        "template--18632139866388__b304f55c-8c63-44cb-9c97-9fc77ec26e16-1681858171deb5ccbe-2"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify://shop_images/BANNER_OPTION_1_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "9316fda9-31e7-4c78-9a56-1ccffe94a2b2": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18632139866388__9316fda9-31e7-4c78-9a56-1ccffe94a2b2-1681927460565205a1-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1_f0048841-e400-465a-98ea-90862a3186e6.png",
+            "title": "Concentrated \"actives\" without any waste or filler",
+            "text": "<p>Unique extraction process preserves superior potency with high bioavailability. Thousands of positive testimonials. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18632139866388__9316fda9-31e7-4c78-9a56-1ccffe94a2b2-1681927460565205a1-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2_f9d436ad-2642-4865-ad7a-0da28883286b.png",
+            "title": "Thousands of human doses taken safely",
+            "text": "<p>A number of regulatory approvals. Sold for years across Canada and the US. Library of studies done in many countries over years. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18632139866388__9316fda9-31e7-4c78-9a56-1ccffe94a2b2-1681927460565205a1-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "title": "Processed in Health Canada & FDA approved facilities",
+            "text": "<p>Analyzed using advanced equipment for toxins. Packaged in high quality facilities. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18632139866388__9316fda9-31e7-4c78-9a56-1ccffe94a2b2-1681927460565205a1-0",
+        "template--18632139866388__9316fda9-31e7-4c78-9a56-1ccffe94a2b2-1681927460565205a1-1",
+        "template--18632139866388__9316fda9-31e7-4c78-9a56-1ccffe94a2b2-1681927460565205a1-2"
+      ],
+      "settings": {
+        "title": "People buy NuYugen's products  because<strong> they work. </strong>",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 88,
+        "padding_bottom": 100
+      }
+    },
+    "963ba018-53d1-4db8-abd1-1622076db526": {
+      "type": "collage",
+      "blocks": {
+        "template--18632139866388__963ba018-53d1-4db8-abd1-1622076db526-16887826184c47c540-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/SOULERA_3.png"
+          }
+        },
+        "template--18632139866388__963ba018-53d1-4db8-abd1-1622076db526-16887826184c47c540-1": {
+          "type": "product",
+          "settings": {
+            "product": "soulera",
+            "second_image": false
+          }
+        },
+        "template--18632139866388__963ba018-53d1-4db8-abd1-1622076db526-16887826184c47c540-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "stress"
+          }
+        }
+      },
+      "block_order": [
+        "template--18632139866388__963ba018-53d1-4db8-abd1-1622076db526-16887826184c47c540-0",
+        "template--18632139866388__963ba018-53d1-4db8-abd1-1622076db526-16887826184c47c540-1",
+        "template--18632139866388__963ba018-53d1-4db8-abd1-1622076db526-16887826184c47c540-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Stress Relief",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "687a88f1-166f-4dac-b6a9-312e623732df": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18632139866388__687a88f1-166f-4dac-b6a9-312e623732df-168877143757f5d228-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get stress relief with Soulera",
+            "heading_size": "h1"
+          }
+        },
+        "template--18632139866388__687a88f1-166f-4dac-b6a9-312e623732df-168877143757f5d228-1": {
+          "type": "text",
+          "settings": {
+            "text": "A unique and proprietary blend of 10 wildcrafted adaptogenic herbs that fight stress. ",
+            "text_style": "body"
+          }
+        },
+        "template--18632139866388__687a88f1-166f-4dac-b6a9-312e623732df-168877143757f5d228-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Explore Soulera",
+            "button_link_1": "shopify://products/soulera",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18632139866388__687a88f1-166f-4dac-b6a9-312e623732df-168877143757f5d228-0",
+        "template--18632139866388__687a88f1-166f-4dac-b6a9-312e623732df-168877143757f5d228-1",
+        "template--18632139866388__687a88f1-166f-4dac-b6a9-312e623732df-168877143757f5d228-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/DSC09788_copy_1_3f98b4eb-0baa-43be-a815-0933f4b88294.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-right",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "58575cf2-43ab-42d9-9f63-590c2c9ec97c": {
+      "type": "collage",
+      "blocks": {
+        "template--18632139866388__58575cf2-43ab-42d9-9f63-590c2c9ec97c-168884423018b6c1f2-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC00338_copy_1.png"
+          }
+        },
+        "template--18632139866388__58575cf2-43ab-42d9-9f63-590c2c9ec97c-168884423018b6c1f2-1": {
+          "type": "product",
+          "settings": {
+            "product": "vk-vitamin-c",
+            "second_image": false
+          }
+        },
+        "template--18632139866388__58575cf2-43ab-42d9-9f63-590c2c9ec97c-168884423018b6c1f2-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "immunity-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--18632139866388__58575cf2-43ab-42d9-9f63-590c2c9ec97c-168884423018b6c1f2-0",
+        "template--18632139866388__58575cf2-43ab-42d9-9f63-590c2c9ec97c-168884423018b6c1f2-1",
+        "template--18632139866388__58575cf2-43ab-42d9-9f63-590c2c9ec97c-168884423018b6c1f2-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Immunity",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d82b8127-a80d-43e9-a79b-e1c02c1ae847": {
+      "type": "image-banner",
+      "blocks": {
+        "85a11c92-9b01-46ab-85f4-f5475d0cf916": {
+          "type": "heading",
+          "settings": {
+            "heading": "Build immunity with VK",
+            "heading_size": "h1"
+          }
+        },
+        "61a4c650-d7d5-4d5f-b30d-5d4ec518f54c": {
+          "type": "text",
+          "settings": {
+            "text": "A groundbreaking formula that maximizes the body’s absorption of Vitamin C.",
+            "text_style": "body"
+          }
+        },
+        "39c3cbd0-5dd2-419c-bb9b-099bfc4ec6a2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Explore VK",
+            "button_link_1": "shopify://products/vk-vitamin-c",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "85a11c92-9b01-46ab-85f4-f5475d0cf916",
+        "61a4c650-d7d5-4d5f-b30d-5d4ec518f54c",
+        "39c3cbd0-5dd2-419c-bb9b-099bfc4ec6a2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/DSC09762_copy_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_with_text_KNFAtz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_bq3ACc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Soulera works at the cellular level",
+            "heading_size": "h1"
+          }
+        },
+        "text_WKwaiY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In today's loud, fast-paced world, stress is the leading reason patients visit their doctor and has become one of the greatest challenges to our health.</p><p>The adaptogens in Soulera are like a hug for the nervous system. Consumed safely for thousands of years, they are mother nature's high-tech smart herbs, as they gently help balance and protect the body.</p><p></p>",
+            "text_style": "body"
+          }
+        },
+        "button_Mb6qUD": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more!",
+            "button_link": "shopify://collections/stress"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bq3ACc",
+        "text_WKwaiY",
+        "button_Mb6qUD"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/DSC09788copy1.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_tqbwF8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jGW8cg": {
+          "type": "heading",
+          "settings": {
+            "heading": "A true revolution of immune science",
+            "heading_size": "h1"
+          }
+        },
+        "text_Xcjant": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The human immune system is a highly advanced machine, finely tuned over thousands of years to battle against continuous challenges to human health.</p><p>When you support your immune system with the right lifestyle, diet and nutrients then it becomes like a prizefighter. VK helps provide your immune system to step out into the world and win!</p>",
+            "text_style": "body"
+          }
+        },
+        "button_AAi97K": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more!",
+            "button_link": "shopify://collections/immunity-1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jGW8cg",
+        "text_Xcjant",
+        "button_AAi97K"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/DSC09762_copy_1.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7c0d8512-ff39-412a-ba4c-61f8db3b50a8": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18632139866388__7c0d8512-ff39-412a-ba4c-61f8db3b50a8-168877377741f2bd58-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hear It From Our Customers!",
+            "heading_size": "h1"
+          }
+        },
+        "template--18632139866388__7c0d8512-ff39-412a-ba4c-61f8db3b50a8-168877377741f2bd58-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--18632139866388__7c0d8512-ff39-412a-ba4c-61f8db3b50a8-168877377741f2bd58-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18632139866388__7c0d8512-ff39-412a-ba4c-61f8db3b50a8-168877377741f2bd58-0",
+        "template--18632139866388__7c0d8512-ff39-412a-ba4c-61f8db3b50a8-168877377741f2bd58-1",
+        "template--18632139866388__7c0d8512-ff39-412a-ba4c-61f8db3b50a8-168877377741f2bd58-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "1688770277e064ade7": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "alireviews-widget-612268": {
+      "type": "alireviews-widget-612268",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "dbad4185-cef7-45bb-b940-a3bb226570ab": {
+      "type": "slideshow",
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "slide_height": "large",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "1688761206fcc6d6a5": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "cdd62c58-c9de-40cd-8949-34ba858bc788": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18632139866388__cdd62c58-c9de-40cd-8949-34ba858bc788-1684858398f3471b81-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--18632139866388__cdd62c58-c9de-40cd-8949-34ba858bc788-1684858398f3471b81-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "template--18632139866388__cdd62c58-c9de-40cd-8949-34ba858bc788-1684858398f3471b81-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18632139866388__cdd62c58-c9de-40cd-8949-34ba858bc788-1684858398f3471b81-0",
+        "template--18632139866388__cdd62c58-c9de-40cd-8949-34ba858bc788-1684858398f3471b81-1",
+        "template--18632139866388__cdd62c58-c9de-40cd-8949-34ba858bc788-1684858398f3471b81-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "alireviews-section-1720809361165": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "b304f55c-8c63-44cb-9c97-9fc77ec26e16",
+    "9316fda9-31e7-4c78-9a56-1ccffe94a2b2",
+    "963ba018-53d1-4db8-abd1-1622076db526",
+    "687a88f1-166f-4dac-b6a9-312e623732df",
+    "58575cf2-43ab-42d9-9f63-590c2c9ec97c",
+    "d82b8127-a80d-43e9-a79b-e1c02c1ae847",
+    "image_with_text_KNFAtz",
+    "image_with_text_tqbwF8",
+    "7c0d8512-ff39-412a-ba4c-61f8db3b50a8",
+    "1688770277e064ade7",
+    "alireviews-widget-612268",
+    "dbad4185-cef7-45bb-b940-a3bb226570ab",
+    "1688761206fcc6d6a5",
+    "cdd62c58-c9de-40cd-8949-34ba858bc788",
+    "alireviews-section-1720809361165"
+  ]
+}
